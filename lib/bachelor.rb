@@ -50,7 +50,7 @@ def get_occupation(data, hometown)
       if hash.values.include?(hometown)
         hash.each do |title, descript|
           if title == "occupation"
-            return descript 
+            return descript
           end
         end
       end
@@ -66,13 +66,13 @@ def get_average_age_for_season(data, season)
       contestants.each do |hash|
         hash.each do |title, descript|
           if title == "age"
-            num = descript.to_i 
-            total_age += num 
-          end 
+            num = descript.to_i
+            total_age += num
+          end
         end
       end
     end
   end
-  avg = total_age / arr_len 
+  avg = total_age / arr_len
   return avg 
 end
