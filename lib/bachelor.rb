@@ -69,11 +69,12 @@ def get_average_age_for_season(data, season)
           if title == "age"
             num = descript.to_i
             total_age += num
+            total_age = total_age.to_f
           end
         end
       end
     end
   end
   avg = total_age / arr_len
-  return avg
+  return avg.round
 end
