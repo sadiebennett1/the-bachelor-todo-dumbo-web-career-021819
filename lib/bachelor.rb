@@ -62,8 +62,8 @@ def get_average_age_for_season(data, season)
   total_age = 0
   arr_len = 0
   data.each do |seasun, contestants|
-    arr_len = contestants.length
     if seasun == season
+      arr_len = contestants.length
       contestants.each do |hash|
         hash.each do |title, descript|
           if title == "age"
