@@ -74,5 +74,5 @@ def get_average_age_for_season(data, season)
     end
   end
   avg = total_age / arr_len
-  return avg 
+  return avg
 end
